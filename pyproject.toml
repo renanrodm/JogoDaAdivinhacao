@@ -1,0 +1,15 @@
+[project]
+name = "jogo-da-adivinhacao-renan-martins"
+version = "0.1.0"
+authors = [{ name = "Renan Martins"}]
+readme = "README.md"
+
+dependencies = []
+
+[project.scripts]
+jogo-adivinha = "jogo_da_adivinhacao.main:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+

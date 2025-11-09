@@ -1,6 +1,28 @@
-# Jogo da Adivinhacao
+# Jogo da Adivinhação (CLI)
 
-Funcionamento: 
-1. O usuário deve pensar em um número inteiro entre 1 e 63.
-2. Em seguida, serão exibidas 6 cartelas. O usuário informará se o número que pensou está presente em cada uma delas.
-3. Ao final da exibição das 6 cartelas, o programa revelará o número que o usuário havia pensado.
+Um joguinho clássico direto no terminal: você pensa em um número entre **1 e 63** e o programa descobre qual é só fazendo algumas perguntas.  
+Simples, rápido e divertido — aquele tipo de parada que qualquer pessoa pode rodar sem dor de cabeça.
+
+---
+
+## ✅ Instalação
+
+### Linux/Mac (bash)
+
+```bash
+pip install jogo-da-adivinhacao-renan-martins
+```
+
+### Windows (PowerShell)
+
+```powershell
+pip install jogo-da-adivinhacao-renan-martins
+```
+
+## Como executar
+
+Exemplo:
+
+```bash
+jogo-adivinha
+```

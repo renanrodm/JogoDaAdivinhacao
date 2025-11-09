@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+jogo_da_adivinhacao/__init__.py
+jogo_da_adivinhacao/main.py
+jogo_da_adivinhacao_renan_martins.egg-info/PKG-INFO
+jogo_da_adivinhacao_renan_martins.egg-info/SOURCES.txt
+jogo_da_adivinhacao_renan_martins.egg-info/dependency_links.txt
+jogo_da_adivinhacao_renan_martins.egg-info/entry_points.txt
+jogo_da_adivinhacao_renan_martins.egg-info/top_level.txt
