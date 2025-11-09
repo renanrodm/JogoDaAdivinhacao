@@ -19,9 +19,9 @@ pip install jogo-da-adivinhacao-renan-martins
 pip install jogo-da-adivinhacao-renan-martins
 ```
 
-## Como executar
+## 💻 Como executar
 
-Exemplo:
+### Linux/Mac/Windows:
 
 ```bash
 jogo-adivinha
