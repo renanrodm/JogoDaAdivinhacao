@@ -44,9 +44,20 @@ def main():
         
         exibeCartela(cartela, pos)
 
-        resp = input("\nO valor escolhido está nessa cartela (s/n)?: ")
+        while True:
+            try:
+                resp = input("\nO valor escolhido está nessa cartela (s/n)?: ")
+                if resp not in ("s", "n"):
+                    raise ValueError("Resposta inválida!")
+                break
+            except ValueError:
+                print("Resposta inválida. Digite 's' ou 'n'")
 
         if resp == "s":
             valorEscolhido += cartela[0]
 
     print(f"\nAtenção! O valor escolhido foi....... {valorEscolhido}!!!!!")
+
+
+if __name__ == "__main__":
+    main()
