@@ -1,0 +1,19 @@
+# virtualenv
+venv/
+.env/
+.venv/
+
+# build/artifacts
+dist/
+build/
+*.egg-info/
+
+# caches
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# editor/OS
+.vscode/
+.idea/
+.DS_Store

@@ -1,7 +1,6 @@
 def geraCartelas():
-    
-    cartelas = [[],[],[],[],[],[]]
-    
+    cartelas = [[], [], [], [], [], []]
+
     for i in range(1, 64):
         prox = i
 
@@ -13,35 +12,53 @@ def geraCartelas():
 
     return cartelas
 
-def exibeCartela(cartela, n):
 
-    print(f"\nCartela {n+1}")
+def exibeCartela(cartela, n):
+    print(f"\nCartela {n + 1}")
 
     for pos, n in enumerate(cartela):
-        print(str(n).rjust(2), end=' ')
+        print(str(n).rjust(2), end=" ")
 
-        if (pos+1) % 8 == 0:
+        if (pos + 1) % 8 == 0:
             print()
-         
+
+
 def exibeMensagemInicial():
-    print("*" * 63)
-    print("*", "Jogo da Adivinhação".center(60), end="*")
-    print("\n*","Pense em um inteiro de 1 a 63 e não conte pra ninguém!".center(60), end="*")
-    print("\n*","Em seguida, tecle ENTER para continuar... e boa sorte!".center(60), end="*")
-    print("\n*", "*".rjust(61))
-    print("*" * 63)
+    linha = "*" * 62
+    largura_bordas = 60
+    print(linha)
+    print("*" + "Jogo da Adivinhação".center(largura_bordas) + "*")
+    print(
+        "*"
+        + "Pense em um inteiro de 1 a 63 e não conte pra ninguém!".center(
+            largura_bordas
+        )
+        + "*"
+    )
+    print(
+        "*" + "Em seguida, tecle ENTER para continuar...".center(largura_bordas) + "*"
+    )
+    print(linha)
+    input("\nPressione ENTER para começar...")
+
+
+def exibeMensagemFinal():
+    linha = "*" * 63
+    largura_bordas = 61
+    print()
+    print(linha)
+    print("*" + "Por: Renan Martins".center(largura_bordas) + "*")
+    print("*" + "github.com/renanrodm".center(largura_bordas) + "*")
+    print(linha)
+
 
 def main():
-
-
     exibeMensagemInicial()
-
 
     cartelas = geraCartelas()
 
     valorEscolhido = 0
     for pos, cartela in enumerate(cartelas):
-        
         exibeCartela(cartela, pos)
 
         while True:
@@ -57,6 +74,8 @@ def main():
             valorEscolhido += cartela[0]
 
     print(f"\nAtenção! O valor escolhido foi....... {valorEscolhido}!!!!!")
+
+    exibeMensagemFinal()
 
 
 if __name__ == "__main__":

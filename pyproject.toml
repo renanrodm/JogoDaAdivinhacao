@@ -13,3 +13,11 @@ jogo-adivinha = "jogo_da_adivinhacao.main:main"
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
+[tool.ruff]
+line-length = 88
+exclude = ["dist", ".git", "__pycache__", "build"]
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "C", "B"]
+extend-ignore = ["E203"]
+

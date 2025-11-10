@@ -1,2 +1,0 @@
-[console_scripts]
-jogo-adivinha = jogo_da_adivinhacao.main:main
